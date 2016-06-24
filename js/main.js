@@ -511,7 +511,7 @@ var ApkMethodCount;
                 var packageNameParts = packageName.split(".");
                 //Empty package
                 if (packageNameParts.length == 1 && packageNameParts[0].length == 0) {
-                    packageNameParts[0] = Model.EMPTY_PACKAGE_NAME;
+                    packageNameParts[0] = classDescriptor;//Model.EMPTY_PACKAGE_NAME;
                 }
                 //Build tree map of classes
                 var currentNode = treemap[packageNameParts[0]];
